@@ -9,6 +9,7 @@ public class MainClass {
 
         CalculatorIO in = new CalculatorIO();
 
+        while(true) {
         System.out.println("Enter Two Numbers");
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
@@ -23,6 +24,9 @@ public class MainClass {
         int multiplicationResult = scal.multiply(in.getNumber1(), in.getNumber2());
         int divisionResult = scal.divide(in.getNumber1(), in.getNumber2());
         
+        
+       
+        
         System.out.println("Enter your choice\n 1:addtion \n 2: subtration \n 3: multiplication \n 4:division \n");
         int value = sc.nextInt();
         switch (value) {
@@ -32,10 +36,12 @@ public class MainClass {
             case 4 -> System.out.println(divisionResult);
             default -> System.out.println("Enter Correct Value");
         }
-
+        
+        }
         
         
-        sc.close();
+       
     }
+    
 
 }
